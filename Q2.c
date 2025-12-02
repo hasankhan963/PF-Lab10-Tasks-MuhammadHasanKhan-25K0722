@@ -32,10 +32,11 @@ int main()
         return 0;
     }
 
-    strcpy(domain, email + atposition + 1);
+    strcpy(domain, email + atPosition + 1);
 
     printf("Domain: %s\n", domain);
 
     return 0;
 }
+
 
