@@ -32,14 +32,10 @@ int main()
         return 0;
     }
 
-    int j = 0;
-    for (int i = atPosition + 1; i < length; i++)
-    {
-        domain[j++] = email[i];
-    }
-    domain[j] = '\0';
+    strcpy(domain, email + atposition + 1);
 
     printf("Domain: %s\n", domain);
 
     return 0;
 }
+
